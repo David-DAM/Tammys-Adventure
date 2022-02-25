@@ -6,39 +6,76 @@ public class MovimientoPersonaje : MonoBehaviour
 {
     public float fuerzaSalto;
     public float velocidad;
+    public int puntuacion;
 
     private Rigidbody2D rigidbody2D;
-    private float horizontal;
-    private bool enTierra;
+    SpriteRenderer sprd;
+
+    private Animator animator;
+
+    bool isJumping = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        sprd = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        Debug.DrawRay(transform.position, Vector3.down*0.1f,Color.red);
-        if (Physics2D.Raycast(transform.position,Vector3.down,0.1f))
-        {
-            enTierra = true;
-        }
-        else
-        {
-            enTierra = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && enTierra)
-        {
-            rigidbody2D.AddForce(Vector2.up*fuerzaSalto);
-        }
+       
     }
 
     private void FixedUpdate()
     {
-        rigidbody2D.velocity = new Vector2(horizontal*velocidad,rigidbody2D.velocity.y); 
+        float movimientoH = Input.GetAxisRaw("Horizontal");
+        rigidbody2D.velocity = new Vector2(movimientoH*velocidad,rigidbody2D.velocity.y);
+
+        if (movimientoH > 0)
+        {
+            sprd.flipX = false;
+        }
+        else if (movimientoH < 0)
+        {
+            sprd.flipX = true;
+        }
+
+        if (movimientoH != 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+
+        if (Input.GetButton("Jump") && !isJumping)
+        {
+            rigidbody2D.AddForce(Vector2.up * fuerzaSalto);
+            isJumping = true;
+            animator.SetBool("isJumping", true);
+        }
+        else
+        {
+            animator.SetBool("isJumping", false);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Suelo"))
+        {
+            isJumping = false;
+            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
+        }
+    }
+
+    public void IncrementarPuntos(int cantidad)
+    {
+        puntuacion += cantidad;
     }
 }
