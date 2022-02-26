@@ -14,6 +14,7 @@ public class MovimientoPersonaje : MonoBehaviour
     private Animator animator;
 
     bool isJumping = false;
+    int contador=0;
 
 
     // Start is called before the first frame update
@@ -51,6 +52,17 @@ public class MovimientoPersonaje : MonoBehaviour
         else
         {
             animator.SetBool("isWalking", false);
+            contador++;
+        }
+
+        if (contador == 160)
+        {
+            animator.SetBool("timeEnought", true);
+            contador = 0;
+        }
+        else
+        {
+            animator.SetBool("timeEnought", false);
         }
 
         if (Input.GetButton("Jump") && !isJumping)
