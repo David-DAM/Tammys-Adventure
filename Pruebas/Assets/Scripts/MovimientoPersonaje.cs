@@ -28,9 +28,10 @@ public class MovimientoPersonaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        
     }
 
+    
     private void FixedUpdate()
     {
         float movimientoH = Input.GetAxisRaw("Horizontal");
