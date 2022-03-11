@@ -16,19 +16,31 @@ public class MovimientoPersonaje : MonoBehaviour
     bool isJumping = false;
     int contador=0;
 
+    public int numVidas=3;
+    public bool vulnerable=true;
 
+    public Canvas canvas;
+    private ControlHUD hud;
+
+    private GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         sprd = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+
+        gameManager = FindObjectOfType<GameManager>();
+
+        hud = canvas.GetComponent<ControlHUD>();
+        //hud.setVidasTxt(numVidas);
+        hud.setVidasTxt(gameManager.getVidas());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //hud.setPuntuacionTxt(gameManager.getPuntuacionGlobal());
     }
 
     
@@ -90,5 +102,38 @@ public class MovimientoPersonaje : MonoBehaviour
     public void IncrementarPuntos(int cantidad)
     {
         puntuacion += cantidad;
+    }
+
+    public void QuitarVida()
+    {
+        if (vulnerable)
+        {
+            vulnerable = false;
+            
+            gameManager.decrementarVidas();
+            hud.setVidasTxt(gameManager.getVidas());
+
+            if (gameManager.getVidas() == 0)
+            {
+                gameManager.TerminarJuego(false);
+            }
+
+            Invoke("HacerVulnerable", 1f);
+            sprd.color = Color.red;
+        }
+    }
+
+    private void HacerVulnerable()
+    {
+        vulnerable = true;
+        sprd.color = Color.white;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            gameManager.TerminarJuego(true);
+        }
     }
 }

@@ -2695,7 +2695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024555672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.23, y: -1.29, z: 0.2305268}
+  m_LocalPosition: {x: -133.3, y: -1.17, z: 0.2305268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2719,7 +2719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9a5c32ec8d9014f87b93b4438155f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Elena
+  nextScene: Ruinas
 --- !u!212 &2024555675
 SpriteRenderer:
   m_ObjectHideFlags: 0

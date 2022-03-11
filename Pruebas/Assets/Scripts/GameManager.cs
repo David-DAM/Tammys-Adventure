@@ -7,9 +7,8 @@ public class GameManager : MonoBehaviour
 {
     private GameObject gameManager;
     public int vidasGlobal;
-    private string mensajeFinal;
-
-    public string MensajeFinal { get => mensajeFinal; set => mensajeFinal = value; }
+    public int puntuacionGlobal;
+    public string mensajeFinal;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +30,15 @@ public class GameManager : MonoBehaviour
     public int getVidas()
     {
         return vidasGlobal;
+    }
+
+    public int getPuntuacionGlobal()
+    {
+        return puntuacionGlobal;
+    }
+    public string getMensajeFinal()
+    {
+        return mensajeFinal;
     }
 
     public void decrementarVidas()
