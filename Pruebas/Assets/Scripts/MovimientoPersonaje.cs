@@ -19,9 +19,6 @@ public class MovimientoPersonaje : MonoBehaviour
     public int numVidas=3;
     public bool vulnerable=true;
 
-    public Canvas canvas;
-    private ControlHUD hud;
-
     private GameManager gameManager;
     // Start is called before the first frame update
     void Start()
@@ -31,16 +28,12 @@ public class MovimientoPersonaje : MonoBehaviour
         animator = GetComponent<Animator>();
 
         gameManager = FindObjectOfType<GameManager>();
-
-        hud = canvas.GetComponent<ControlHUD>();
-        //hud.setVidasTxt(numVidas);
-        hud.setVidasTxt(gameManager.getVidas());
     }
 
     // Update is called once per frame
     void Update()
     {
-        //hud.setPuntuacionTxt(gameManager.getPuntuacionGlobal());
+        
     }
 
     
@@ -99,9 +92,9 @@ public class MovimientoPersonaje : MonoBehaviour
         }
     }
 
-    public void IncrementarPuntos(int cantidad)
+    public void IncrementarPuntos()
     {
-        puntuacion += cantidad;
+        gameManager.aumentarPuntuacion();
     }
 
     public void QuitarVida()
@@ -111,7 +104,6 @@ public class MovimientoPersonaje : MonoBehaviour
             vulnerable = false;
             
             gameManager.decrementarVidas();
-            hud.setVidasTxt(gameManager.getVidas());
 
             if (gameManager.getVidas() == 0)
             {

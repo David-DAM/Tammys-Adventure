@@ -13,6 +13,6 @@ public class Final : MonoBehaviour
     {
         gameManager=FindObjectOfType<GameManager>();
 
-        textMeshProUGUI.text = gameManager.getMensajeFinal();
+        textMeshProUGUI.text = gameManager.getMensajeFinal()+ "\nPuntuacion:"+gameManager.getPuntuacionGlobal();
     }
 }

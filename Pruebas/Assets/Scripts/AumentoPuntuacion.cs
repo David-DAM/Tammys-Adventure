@@ -6,12 +6,11 @@ public class AumentoPuntuacion : MonoBehaviour
 {
     public ParticleSystem colisionParticulas;
     public SpriteRenderer sprite;
-    public int cantidad;
     public bool repe=true;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<MovimientoPersonaje>().IncrementarPuntos(cantidad);
+        collision.gameObject.GetComponent<MovimientoPersonaje>().IncrementarPuntos();
 
         if (repe)
         {

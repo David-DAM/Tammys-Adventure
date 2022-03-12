@@ -104,7 +104,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ba77439779c765546ba7133e04ecf078, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -138,8 +138,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuerzaSalto: 200
-  velocidad: 2
+  velocidad: 2.5
   puntuacion: 0
+  numVidas: 3
+  vulnerable: 1
 --- !u!95 &1206422625544898938
 Animator:
   serializedVersion: 4

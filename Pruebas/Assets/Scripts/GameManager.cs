@@ -10,12 +10,18 @@ public class GameManager : MonoBehaviour
     public int puntuacionGlobal;
     public string mensajeFinal;
 
+    public Canvas canvas;
+    private ControlHUD hud;
+
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("GameManager");
         DontDestroyOnLoad(gameManager);
         SceneManager.LoadScene("Menu");
+
+        hud = canvas.GetComponent<ControlHUD>();
+        hud.setVidasTxt(vidasGlobal);
     }
     public void cambiarEscena(string siguienteScene)
     {
@@ -44,6 +50,12 @@ public class GameManager : MonoBehaviour
     public void decrementarVidas()
     {
         vidasGlobal--;
+        hud.setVidasTxt(vidasGlobal);
+    }
+    public void aumentarPuntuacion()
+    {
+        puntuacionGlobal++;
+        hud.setPuntuacionTxt(puntuacionGlobal);
     }
     public void inicializarVidas()
     {
@@ -51,7 +63,7 @@ public class GameManager : MonoBehaviour
     }
     public void TerminarJuego(bool ganar)
     {
-        mensajeFinal = (ganar) ? "Felicidades has terminado el juego" : "Uuuuuuhhhhh has perdido";
-        cambiarEscena("FINAL");
+        mensajeFinal = (ganar) ? "Felicidades has terminado el juego" : "Has perdido";
+        cambiarEscena("Final");
     }
 }
