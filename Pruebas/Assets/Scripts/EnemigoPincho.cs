@@ -9,6 +9,7 @@ public class EnemigoPincho : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<MovimientoPersonaje>().QuitarVida();
             ControladorNivel.instance.Respawn();
         }
     }

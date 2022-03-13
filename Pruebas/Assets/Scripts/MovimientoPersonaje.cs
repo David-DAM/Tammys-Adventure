@@ -87,9 +87,9 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             animator.SetBool("isJumping", false);
         }
-        /*
         
-        float movimientoH;
+        
+        
         if ((joystick.Horizontal >= .2f) | (joystick.Horizontal <= .2f))
         {
             movimientoH = joystick.Horizontal;
@@ -126,7 +126,7 @@ public class MovimientoPersonaje : MonoBehaviour
             rigidbody2D.AddForce(Vector2.up * potenciaSalto);
             isJumping = true;
         }
-        */
+        
         
     }
 
@@ -176,5 +176,9 @@ public class MovimientoPersonaje : MonoBehaviour
         }
     }
 
+    public void setJoystick(Joystick joystick)
+    {
+        this.joystick = joystick;
+    }
     
 }

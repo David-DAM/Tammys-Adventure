@@ -10,7 +10,7 @@ public class ControladorNivel : MonoBehaviour
 
     public Transform respawn;
     public GameObject jugador;
-
+    public GameObject joystick;
     public CinemachineVirtualCameraBase cam;
 
     private void Awake()
@@ -19,8 +19,13 @@ public class ControladorNivel : MonoBehaviour
     }
 
     public void Respawn()
+
+
     {
+        joystick = GameObject.Find("Joystick");
+        jugador.GetComponent<MovimientoPersonaje>().setJoystick(joystick.GetComponent<Joystick>());
         GameObject player= Instantiate(jugador,respawn.position,Quaternion.identity);
+        
         cam.Follow=player.transform;
     }
 }

@@ -170,7 +170,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4952381, y: 1}
+    m_SensorSize: {x: 2.1213872, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1176,6 +1176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 542632929}
   - component: {fileID: 542632930}
+  - component: {fileID: 542632931}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -1191,7 +1192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542632928}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.23, y: 0.06, z: -0.2305268}
+  m_LocalPosition: {x: 2.19, y: 0.02, z: -0.2305268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1250,6 +1251,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &542632931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542632928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9a5c32ec8d9014f87b93b4438155f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: 
 --- !u!1 &552400544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6272704585623115366, guid: 20ee5267dd6d96948836124ceb2d6acb, type: 3}
@@ -1360,7 +1374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657934361}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.296, y: -0.0453, z: 0}
+  m_LocalPosition: {x: -29.7719, y: 3.0373, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1451,10 +1465,10 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 19.2, y: 10.8}
-    newSize: {x: 101.53696, y: 10.709481}
+    newSize: {x: 104.488716, y: 21.596924}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
-    adaptiveTiling: 0
+    adaptiveTiling: 1
   m_AutoTiling: 0
   m_Points:
     m_Paths:
@@ -1508,9 +1522,9 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 101.53696, y: 10.709481}
+  m_Size: {x: 104.488716, y: 21.596924}
   m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
+  m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
@@ -5407,12 +5421,20 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6272704585623115367, guid: 20ee5267dd6d96948836124ceb2d6acb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5557556
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272704585623115367, guid: 20ee5267dd6d96948836124ceb2d6acb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3951432
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272704585623115367, guid: 20ee5267dd6d96948836124ceb2d6acb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9932
+      value: 1.995
       objectReference: {fileID: 0}
     - target: {fileID: 6272704585623115367, guid: 20ee5267dd6d96948836124ceb2d6acb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.0832
+      value: -4.0928
       objectReference: {fileID: 0}
     - target: {fileID: 6272704585623115367, guid: 20ee5267dd6d96948836124ceb2d6acb, type: 3}
       propertyPath: m_LocalPosition.z
