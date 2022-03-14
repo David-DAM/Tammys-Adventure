@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
     public void inicializarVidas()
     {
         vidasGlobal = 3;
+        puntuacionGlobal = 0;
     }
     public void TerminarJuego(bool ganar)
     {
