@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager");
         DontDestroyOnLoad(gameManager);
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Centro");
 
         hud = canvas.GetComponent<ControlHUD>();
         hud.setVidasTxt(vidasGlobal);
@@ -70,8 +70,10 @@ public class GameManager : MonoBehaviour
     }
     public void inicializarVidas()
     {
-        vidasGlobal = 3;
+        vidasGlobal = 5;
+        hud.setVidasTxt(vidasGlobal);
         puntuacionGlobal = 0;
+        hud.setPuntuacionTxt(puntuacionGlobal);
     }
     public void TerminarJuego(bool ganar)
     {

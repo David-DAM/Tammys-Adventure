@@ -16,7 +16,7 @@ public class MovimientoPersonaje : MonoBehaviour
     bool isJumping = false;
     int contador=0;
 
-    public int numVidas=3;
+    public int numVidas=5;
     public bool vulnerable=true;
 
     private GameManager gameManager;
@@ -121,11 +121,11 @@ public class MovimientoPersonaje : MonoBehaviour
         }
         float movimientoV = joystick.Vertical;
         //if(Input.GetButton("Jump") && !isJumping)
-        /*if ((movimientoV >= .5f) && (!isJumping))
+        if ((movimientoV >= .5f) && (!isJumping))
         {
             rigidbody2D.AddForce(Vector2.up * fuerzaSalto);
             isJumping = true;
-        }*/
+        }
         
         
     }
@@ -158,7 +158,7 @@ public class MovimientoPersonaje : MonoBehaviour
             }
 
             Invoke("HacerVulnerable", 1f);
-            sprd.color = Color.red;
+            sprd.color = Color.grey;
         }
     }
 

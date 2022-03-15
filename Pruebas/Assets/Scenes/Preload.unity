@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de3ce25c5d50ef469114f25536a4e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidasGlobal: 3
+  vidasGlobal: 5
   puntuacionGlobal: 0
   mensajeFinal: 
   canvas: {fileID: 1817778383}

@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 
 
+
 public class ControladorNivel : MonoBehaviour
 {
     public static ControladorNivel instance;
@@ -11,6 +12,7 @@ public class ControladorNivel : MonoBehaviour
     public Transform respawn;
     public GameObject jugador;
     private GameObject joystick;
+    public GameObject botonSaltar;
     public CinemachineVirtualCameraBase cam;
 
     private void Awake()
@@ -24,8 +26,10 @@ public class ControladorNivel : MonoBehaviour
     {
         joystick = GameObject.Find("Joystick");
         jugador.GetComponent<MovimientoPersonaje>().setJoystick(joystick.GetComponent<Joystick>());
+
         GameObject player= Instantiate(jugador,respawn.position,Quaternion.identity);
-        
         cam.Follow=player.transform;
+
+        
     }
 }
