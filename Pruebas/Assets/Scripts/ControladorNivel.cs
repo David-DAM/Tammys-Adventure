@@ -10,7 +10,7 @@ public class ControladorNivel : MonoBehaviour
 
     public Transform respawn;
     public GameObject jugador;
-    public GameObject joystick;
+    private GameObject joystick;
     public CinemachineVirtualCameraBase cam;
 
     private void Awake()

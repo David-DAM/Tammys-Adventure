@@ -60,4 +60,6 @@ public class EnemigoMovimiento : MonoBehaviour
             collider.gameObject.GetComponent<MovimientoPersonaje>().QuitarVida();
         }
     }
+
+    
 }
