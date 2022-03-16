@@ -800,8 +800,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.6759, y: -9.5937}
-  m_SizeDelta: {x: 479.0885, y: 250.5947}
+  m_AnchoredPosition: {x: -0.000005722, y: 0.0000095367}
+  m_SizeDelta: {x: 568.72, y: 250.5947}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225340945
 MonoBehaviour:
@@ -823,8 +823,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Videojuego desarrollado por:\nJavier Aguirre Rinc\xF3n\nElena Doctor Garcia\nDavid
-    Jim\xE9nez Villajos"
+  m_text: "Videojuego desarrollado por:\nJavier Aguirre Rinc\xF3n\njavieraguirrerincon@outlook.com\nElena
+    Doctor Garcia\nelena.dg167@gmail.com\nDavid Jim\xE9nez Villajos\ndavid11jv@gmail.com"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
