@@ -1,5 +1,5 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "L2NDU19929000180",
     "m_SelectedPackage": {
         "deviceId": "",
         "name": "",
@@ -7,7 +7,44 @@
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "L2NDU19929000180",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 31407,
+            "exited": true
+        },
+        {
+            "deviceId": "L2NDU19929000180",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 32132,
+            "exited": true
+        },
+        {
+            "deviceId": "L2NDU19929000180",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 1191,
+            "exited": true
+        },
+        {
+            "deviceId": "L2NDU19929000180",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 3483,
+            "exited": true
+        },
+        {
+            "deviceId": "L2NDU19929000180",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 4479,
+            "exited": true
+        },
+        {
+            "deviceId": "L2NDU19929000180",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 9226,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -41,9 +78,20 @@
         ]
     },
     "m_MemoryViewerState": {
-        "MemoryWindowHeight": 0.0,
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "Behavior": 0
     },

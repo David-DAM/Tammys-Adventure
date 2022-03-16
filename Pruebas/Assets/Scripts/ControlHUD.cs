@@ -37,5 +37,13 @@ public class ControlHUD : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        optionsPanel.SetActive(false);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
+        Time.timeScale = 1;
+        optionsPanel.SetActive(false);
     }
 }

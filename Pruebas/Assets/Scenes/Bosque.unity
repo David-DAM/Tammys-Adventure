@@ -247,7 +247,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.142562, y: 1}
+    m_SensorSize: {x: 1.961211, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -383,6 +383,50 @@ PrefabInstance:
     - target: {fileID: 3863656823243057746, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
       propertyPath: m_Name
       value: Joystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656823243057747, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 129.6304
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656823243057747, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 132.6945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656823243057747, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 69.36322
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656823243057747, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 68.89526
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656825070709161, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656825070709161, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656825070709161, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 89.7937
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656825070709161, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 87.7511
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656825070709161, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000021458
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863656825070709161, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000019073
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127608474143094880, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7341541131118066808, guid: 31d54c20e1c7dc947836df4387964698, type: 3}
       propertyPath: m_Pivot.x
@@ -971,7 +1015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -123.583206, y: 2.0484498, z: -8.44}
+  m_LocalPosition: {x: -123.89, y: 2.05, z: -8.44}
   m_LocalScale: {x: 1.0413, y: 1.2716, z: 1.1283}
   m_ConstrainProportionsScale: 0
   m_Children: []
