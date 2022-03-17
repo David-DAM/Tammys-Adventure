@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 3899b00ae2570b54e975aaca6f543fa3
   - enabled: 1
-    path: Assets/Scenes/Ruinas.unity
-    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 1
     path: Assets/Scenes/Bosque.unity
     guid: 0a725058a91f25d41b2aab3a400de5da
+  - enabled: 1
+    path: Assets/Scenes/Ruinas.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
     path: Assets/Scenes/Invierno.unity
     guid: a60faf58be9094c498f5054801b20533

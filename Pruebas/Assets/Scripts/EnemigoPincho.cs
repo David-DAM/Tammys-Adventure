@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class EnemigoPincho : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+   
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.CompareTag("Player"))
         {
-            Destroy(collision.gameObject);
             collision.gameObject.GetComponent<MovimientoPersonaje>().QuitarVida();
-            ControladorNivel.instance.Respawn();
+            ControladorNivel.instance.reaparecer();
         }
     }
 }

@@ -121,12 +121,13 @@ public class MovimientoPersonaje : MonoBehaviour
         }
         float movimientoV = joystick.Vertical;
         //if(Input.GetButton("Jump") && !isJumping)
+        /*
         if ((movimientoV >= .5f) && (!isJumping))
         {
             rigidbody2D.AddForce(Vector2.up * fuerzaSalto);
             isJumping = true;
         }
-        
+        */
         
     }
 
@@ -187,7 +188,6 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             rigidbody2D.AddForce(Vector2.up * fuerzaSalto);
             isJumping = true;
-            
         }
 
     }
