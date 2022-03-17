@@ -7,6 +7,10 @@ public class MovimientoPersonaje : MonoBehaviour
     public float fuerzaSalto;
     public float velocidad;
     public int puntuacion;
+    public AudioClip impacto;
+    public AudioClip salto;
+    public AudioClip puntuar;
+    AudioSource audioSource;
 
     private Rigidbody2D rigidbody2D;
     SpriteRenderer sprd;
@@ -30,7 +34,7 @@ public class MovimientoPersonaje : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         sprd = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-
+        audioSource = GetComponent<AudioSource>();
         gameManager = FindObjectOfType<GameManager>();
     }
 
@@ -142,6 +146,7 @@ public class MovimientoPersonaje : MonoBehaviour
 
     public void IncrementarPuntos()
     {
+        audioSource.PlayOneShot(puntuar);
         gameManager.aumentarPuntuacion();
     }
 
@@ -150,7 +155,8 @@ public class MovimientoPersonaje : MonoBehaviour
         if (vulnerable)
         {
             vulnerable = false;
-            
+
+            audioSource.PlayOneShot(impacto);
             gameManager.decrementarVidas();
 
             if (gameManager.getVidas() == 0)
@@ -186,6 +192,7 @@ public class MovimientoPersonaje : MonoBehaviour
     {
         if (!isJumping)
         {
+            audioSource.PlayOneShot(salto);
             rigidbody2D.AddForce(Vector2.up * fuerzaSalto);
             isJumping = true;
         }

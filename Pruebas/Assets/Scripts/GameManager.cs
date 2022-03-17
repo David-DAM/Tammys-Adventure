@@ -57,7 +57,11 @@ public class GameManager : MonoBehaviour
     {
         return mensajeFinal;
     }
-
+    public void inmortal()
+    {
+        vidasGlobal = 9999;
+        hud.setVidasTxt(vidasGlobal);
+    }
     public void decrementarVidas()
     {
         vidasGlobal--;

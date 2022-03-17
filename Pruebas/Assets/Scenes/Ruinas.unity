@@ -308,7 +308,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8053571, y: 1}
+    m_SensorSize: {x: 1.8964286, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -994,7 +994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.474575, y: 0.41188335, z: -8.44}
+  m_LocalPosition: {x: -8.019218, y: 0.41188335, z: -8.44}
   m_LocalScale: {x: 1, y: 1, z: 1.1283}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8043,6 +8043,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1206422625544898941, guid: 441752551f39baa479f04fcb6ebcbfba, type: 3}
+      propertyPath: salto
+      value: 
+      objectReference: {fileID: 8300000, guid: 671e9b266832b88499f83e3f0b8942eb, type: 3}
+    - target: {fileID: 1206422625544898941, guid: 441752551f39baa479f04fcb6ebcbfba, type: 3}
+      propertyPath: impacto
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d80c1ddc2ec64448aead479c2b66265, type: 3}
+    - target: {fileID: 1206422625544898941, guid: 441752551f39baa479f04fcb6ebcbfba, type: 3}
+      propertyPath: puntuar
+      value: 
+      objectReference: {fileID: 8300000, guid: 06e982600c11ea149b58f336933cd98c, type: 3}
     - target: {fileID: 1206422625544898941, guid: 441752551f39baa479f04fcb6ebcbfba, type: 3}
       propertyPath: joystick
       value: 
