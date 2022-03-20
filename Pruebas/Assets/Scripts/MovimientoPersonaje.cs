@@ -195,8 +195,13 @@ public class MovimientoPersonaje : MonoBehaviour
             audioSource.PlayOneShot(salto);
             rigidbody2D.AddForce(Vector2.up * fuerzaSalto);
             isJumping = true;
+            animator.SetBool("isJumping", true);
         }
-
+        else
+        {
+            animator.SetBool("isJumping", false);
+        }
+       
     }
 
 }

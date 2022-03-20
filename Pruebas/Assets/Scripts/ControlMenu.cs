@@ -24,6 +24,19 @@ public class ControlMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void GameInfo() {
+        SceneManager.LoadScene("InfoAssets");
+    }
+
+    public void SoundInfo() {
+        SceneManager.LoadScene("InfoSonidos");
+    }
+
+    public void ToolsInfo() {
+        SceneManager.LoadScene("InfoUtilidades");
+    }
+
+
     public void OnButtonmenu()
     {
         SceneManager.LoadScene("Menu");
